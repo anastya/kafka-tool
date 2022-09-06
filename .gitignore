@@ -2,10 +2,9 @@
 !.idea/runConfigurations
 .idea/runConfigurations/*
 !.idea/runConfigurations/shared___*
-.gradle/
+mainModule.iml
 build/
 out/
 lib/
 target/
 allure-results/
-!papi-docs/src/test/kotlin/com/starsteer/solo/papi/docs/generator/tests/logs
