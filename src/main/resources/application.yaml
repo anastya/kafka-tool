@@ -1,0 +1,9 @@
+
+server:
+  port: ${SERVER_PORT:8787}
+
+# Application environment
+app:
+  service-name: ${SERVICE_NAME:kafka-tool}
+  kafka:
+    bootstrap-servers: ${KAFKA_HOST:localhost:9092}
