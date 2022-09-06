@@ -15,16 +15,16 @@ class KafkaToolController(
     private val kafkaToolService: KafkaToolService
 ) {
 
-    @ApiOperation(value = "Отправка данных в топик Kafka")
+    @ApiOperation(value = "Send data to Kafka topic")
     @PostMapping("/producer/string")
     fun sendMessageToKafka(
         @RequestBody(required = true)
         message: String,
 
-        @ApiParam("Имя topica")
+        @ApiParam("Topic name")
         @RequestParam(name = "topicName", required = true) topicName: String,
 
-        @ApiParam("Партиция topica", example = "0")
+        @ApiParam("Topic partition", example = "0")
         @RequestParam(name = "topicPartition", required = false, defaultValue = "0") topicPartition: Int
     ) {
         kafkaToolService.sendMessageToKafka(topicName, topicPartition, message)

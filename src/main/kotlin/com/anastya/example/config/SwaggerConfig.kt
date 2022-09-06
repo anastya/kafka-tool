@@ -11,13 +11,13 @@ import springfox.documentation.spring.web.plugins.Docket
 @Configuration
 open class SwaggerConfig {
     /**
-     * Бин для конфигурации Swagger UI
+     * Bean for configuration Swagger UI
      */
     @Bean
     open fun api(): Docket {
         val apiInfo = ApiInfo(
             "Kafka-tool API",
-            """Спецификация API сервиса kafka-tool""",
+            """Specification API kafka-tool service""",
             "1.0",
             ApiInfo.DEFAULT.termsOfServiceUrl,
             ApiInfo.DEFAULT.contact,
